@@ -12,13 +12,14 @@ const produkIndex = async (req, res) => {
 // Fungsi untuk memasukkan data produk
 const produkInsert = async (req, res) => {
     try {
-        const { nama, deskripsi, harga, stok, kategori_id } = req.body;
+        // const { nama, deskripsi, harga, stok, kategori_id } = req.body;
+        const { nama, deskripsi, harga, stok } = req.body;
         const produk = new Produk({
             nama,
             deskripsi,
             harga,
             stok,
-            kategori_id
+            // kategori_id
         });
         await produk.save();
         res.status(200).json({ message: 'Success', data: produk })
