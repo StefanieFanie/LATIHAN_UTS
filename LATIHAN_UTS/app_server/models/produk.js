@@ -20,5 +20,5 @@ const produkSchema = new mongoose.Schema({
     }
 });
 
-const Mahasiswa = mongoose.model('Produk', produkSchema);
+const Produk = mongoose.model('Produk', produkSchema);
 module.exports = Produk;
