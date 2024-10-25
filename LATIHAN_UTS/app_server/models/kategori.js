@@ -15,7 +15,7 @@ const kategoriSchema = new mongoose.Schema({
     },
     status: {
         type: Boolean,
-    },
+    }
 });
 
 const Kategori = mongoose.model('Kategori', kategoriSchema);

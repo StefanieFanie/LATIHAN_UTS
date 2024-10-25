@@ -15,7 +15,7 @@ const penggunaSchema = new mongoose.Schema({
     },
     tanggal_daftar: {
         type: Date,
-    },
+    }
 });
 
 const Pengguna = mongoose.model('Pengguna', penggunaSchema);

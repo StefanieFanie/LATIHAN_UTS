@@ -19,7 +19,7 @@ const transaksiSchema = new mongoose.Schema({
     },
     tanggal_transaksi: {
         type: Date,
-    },
+    }
 });
 
 const Transaksi = mongoose.model('Transaksi', transaksiSchema);
